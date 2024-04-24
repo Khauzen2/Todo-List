@@ -25,22 +25,22 @@ function ToDoList(){
 
   }
   return(
-   <div className= "Container">
+   <div className="Container">
     <div className="todo-list">
 
-      <h1>To-Do List</h1>
+      <h2><h1>To-Do List</h1>(click the X button when task complete)</h2>
         
           <div className = "InputField">
             <input 
                 type="text"
                 placeholder="Add your task"
                 value={newTask}
-                onChange={handleInputChange} />
+                onChange={handleInputChange} /> 
                 <button 
                     className="add-button"
                     onClick={addTask}>
                     Add
-                </button>
+                </button>   
           </div>
           <ol>
             {tasks.map((task, index) =>
